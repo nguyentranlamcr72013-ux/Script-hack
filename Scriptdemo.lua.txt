@@ -2,8 +2,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "Laam Hub v1.0",
-         Animation = "Zalo supported :0942062013,Tiktok:Laam"
+         Title = "Laam Hub 🇻🇳 | " .. player.Name .. " | Script Tổng hợp",
+         Animation = "Zalo supported:0942062013,Tiktok:Laam"
          },
         Key = {
         KeySystem = false,
@@ -30,7 +30,9 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "Script Farm"})
+     local Tab1o = MakeTab({Name = "Script Redz Hub"})
+     local Tab2o = MakeTab({Name = "Script Banana Hub"})
+     local Tab3o = MakeTab({Name = "Script khác(ngoài redz và banana)"})
      
 ------- BUTTON
     
@@ -38,8 +40,49 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      Name = "Gravity Hub",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
-    
-  end
-  })nt.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
   end
   })
+  
+ AddButton(Tab2o, {
+     Name = "Longhihi BananaHub",
+    Callback = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/longhihilonghihi-hub/BananaHub/refs/heads/main/CombackVersion"))()
+  end
+  })
+ AddButton(Tab2o, {
+     Name = "TrauHub+get key",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/realkidhub/realkid/refs/heads/main/main.lua"))()
+ end
+  })
+ AddButton(Tab2o, {
+     Name = "GravityHub+bananahub",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+  end
+  })
+  
+   AddButton(Tab1o, {
+    Name = "NejiDepzai"
+  Callback = function()
+   repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-NejiDepzai/Bloxfruits/refs/heads/main/Main.lua"))()
+end
+})
+
+
+AddButton(Tab3o, {
+ Name = "NightMystic"
+Callback = function()
+ repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().team = "Marines" --  Marines or Pirates
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-NightMystic/Bloxfruits/refs/heads/main/Script.lua"))()
+end
+})
+AddButton(Tab2o, {
+     Name = "Panda Hub",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/nvb201112/the_real_Panda-Hub/refs/heads/main/BloxFruits.luau"))()
+ end
+  })
+  
